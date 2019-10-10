@@ -12,6 +12,11 @@ function addExcitement (theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
+       //check whether and add !
+       if ((i+1)%3===0) {
+           theWordArray[i] += "!";
+       };
+       
         // Concatenate the new word onto buildMeUp
 buildMeUp += (theWordArray[i] + " ");
         // Print buildMeUp to the console
